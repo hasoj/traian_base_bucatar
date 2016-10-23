@@ -9,6 +9,8 @@ text = File.read('./sample_2')
 
 
 markov.feed(text)
+markov.normalize!
+
 post = markov.generate_phrase(', ')
 puts post
 

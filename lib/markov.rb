@@ -22,7 +22,7 @@ class Markov
 		count = 0
 		buffer = [token]
 		loop do 
-			break if count > 10
+			break if count > 10		
 			count +=1
 			value = @state[key]
 			next_token = value.first[0]
